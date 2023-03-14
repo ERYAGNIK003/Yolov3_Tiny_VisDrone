@@ -1,0 +1,5 @@
+classes= 10
+train  = /home/seas/codesAU2149006/codes/Sem4/darknet_yolov3_tiny/VisDrone/VisDrone2019-DET-train/images.txt
+valid  = /home/seas/codesAU2149006/codes/Sem4/darknet_yolov3_tiny/VisDrone/VisDrone2019-DET-val/images.txt
+names = data/visdrone.names
+backup = backup
