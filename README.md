@@ -38,7 +38,7 @@ Training instruction : https://github.com/AlexeyAB/darknet/issues/504 <br>
 - Execute it by "python dataTransform.py" , this will create images.txt file in all three dataset directory
 - Add configuration files into darknet directory
   - Download visdrone.data into darknet/cfg/
-    - Modify <path-to-dataset>/images.txt according to your dataset path
+    - Modify "path-to-dataset/images.txt" according to your dataset path
   - Download visdrone.names into darknet/data/
   - Download yolov3_visdrone.cfg into darknet/cfg/
 - Start training yolov3_tiny on visdrone dataset using below command,
