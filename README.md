@@ -45,7 +45,7 @@ visualizing network : https://github.com/hahnyuan/darknet-visualizer <br>
 - To visualize your netowrk use graph visualizer
   - pip install graphviz
   - sudo apt-get install graphviz
-  - git clone https://github.com/hahnyuan/darknet-visualizer
+  - git clone https://github.com/hahnyuan/darknet-visualizer.git
   - cd darknet-visualizer
   - python3 darknet_visualize.py example/yolov3.cfg (replace path to .cfg file as per yours)
 - Start training yolov3_tiny on visdrone dataset using below command,
