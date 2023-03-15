@@ -17,6 +17,7 @@ Darknet installation guide : https://github.com/ERYAGNIK003/darknet <br>
 Download convolution layers(darknet53) weights : https://pjreddie.com/media/files/darknet53.conv.74 <br>
 Transform VisDrone data format to Darknet : https://github.com/zhaobaiyu/visdrone <br>
 Training instruction : https://github.com/AlexeyAB/darknet/issues/504 <br>
+visualizing network : https://github.com/hahnyuan/darknet-visualizer <br>
 
 # Directory structure
 |<br>
@@ -41,10 +42,12 @@ Training instruction : https://github.com/AlexeyAB/darknet/issues/504 <br>
     - Modify "path-to-dataset/images.txt" according to your dataset path
   - Download visdrone.names into darknet/data/
   - Download yolov3_visdrone.cfg into darknet/cfg/
+- To visualize your netowrk use graph visualizer
+  - pip install graphviz
+  - sudo apt-get install graphviz
+  - git clone https://github.com/hahnyuan/darknet-visualizer
+  - cd darknet-visualizer
+  - python3 darknet_visualize.py example/yolov3.cfg (replace path to .cfg file as per yours)
 - Start training yolov3_tiny on visdrone dataset using below command,
   - cd darknet
   - ./darknet detector train cfg/visdrone.data cfg/yolov3_tiny.cfg darknet53.conv.74 -dont_show -map
-
-
-
-
