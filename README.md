@@ -51,3 +51,6 @@ visualizing network : https://github.com/hahnyuan/darknet-visualizer <br>
 - Start training yolov3_tiny on visdrone dataset using below command,
   - cd darknet
   - ./darknet detector train cfg/visdrone.data cfg/yolov3_tiny.cfg darknet53.conv.74 -dont_show -map
+
+# Testing 
+- ./darknet detect cfg/yolov3-tiny.cfg backup/yolov3-tiny.weights data/1.jpg
